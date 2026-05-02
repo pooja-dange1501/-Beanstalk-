@@ -4,10 +4,24 @@ This project demonstrates deploying a Flask web application using AWS Elastic Be
 
 🏗️ Architecture Diagram
 Flow:
+User Request
+↓
+Elastic Beanstalk
+↓
+EC2 (Beanstalk Instance)
+↓ Flask App
+↓
+Amazon RDS
+↓
+Data Response
+Manual EC2 (Testing)
+↓
+Connects to RDS using MySQL / Python script
+CloudWatch
+↑
+Monitors EC2 + Application logs
 
  
- 
-
 Technologies Used & Purpose
 
 
